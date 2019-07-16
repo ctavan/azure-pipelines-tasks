@@ -1,0 +1,10 @@
+{
+  "loc.friendlyName": "MSBuild authenticate",
+  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/MSBuildAuthenticateTask)",
+  "loc.description": "Configures NuGet package management in MSBuild to authenticate with Azure Artifacts and other repositories. Requires MSBuild 15.8.166.59604 or higher.",
+  "loc.instanceNameFormat": "Set up MSBuild authentication",
+  "loc.input.label.nuGetServiceConnections": "Service connection credentials for feeds outside this organization",
+  "loc.input.help.nuGetServiceConnections": "Service connection credentials for feeds outside this organization/collection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.",
+  "loc.messages.ConfiguringMSBuildForCredProvider": "Configuring MSBuild to use the credential provider. For more information, see https://aka.ms/MSBuildAuthenticateTask",
+  "loc.messages.Error_MSBuildAuthenticateOnlyForWindows": "The MSBuildAuthenticate task can only be used on Windows. For .NET Core, use the DotNetAuthenticate task."
+}

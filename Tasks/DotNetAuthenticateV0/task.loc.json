@@ -1,0 +1,42 @@
+{
+  "id": "5c6567d9-0712-43eb-965d-ba296b3625c2",
+  "name": "DotNetAuthenticate",
+  "friendlyName": "ms-resource:loc.friendlyName",
+  "description": "ms-resource:loc.description",
+  "author": "Microsoft Corporation",
+  "helpUrl": "https://aka.ms/DotnetAuthenticateTask",
+  "helpMarkDown": "ms-resource:loc.helpMarkDown",
+  "category": "Package",
+  "runsOn": [
+    "Agent",
+    "DeploymentGroup"
+  ],
+  "version": {
+    "Major": 0,
+    "Minor": 156,
+    "Patch": 0
+  },
+  "minimumAgentVersion": "2.105.7",
+  "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
+  "inputs": [
+    {
+      "name": "nuGetServiceConnections",
+      "type": "connectedService:ExternalNuGetFeed",
+      "label": "ms-resource:loc.input.label.nuGetServiceConnections",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.nuGetServiceConnections",
+      "properties": {
+        "EditableOptions": "False",
+        "MultiSelectFlatList": "True"
+      }
+    }
+  ],
+  "execution": {
+    "Node": {
+      "target": "main.js"
+    }
+  },
+  "messages": {
+    "ConfiguringDotnetForCredProvider": "ms-resource:loc.messages.ConfiguringDotnetForCredProvider"
+  }
+}

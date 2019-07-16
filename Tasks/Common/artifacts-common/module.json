@@ -1,0 +1,11 @@
+{
+    "messages": {
+        "CredProvider_Error_InvalidServiceConnection": "The service connection for '%s' is not valid.",
+        "CredProvider_Error_InvalidServiceConnection_ApiKey": "The service connection for '%s' is not valid. ApiKey service connections are not supported in this task. Instead, use -ApiKey (NuGet) or --api-key (dotnet) when invoking the tool itself. See the task documentation for more details.",
+        "CredProvider_SettingUpForOrgFeeds": "Setting up the credential provider to use the identity '%s' for feeds in your organization/collection starting with:",
+        "CredProvider_SettingUpForServiceConnections": "Setting up the credential provider for these service connections:",
+        "ServiceConnections_Error_FailedToParseServiceEndpoint_MissingParameter": "Failed to parse the service endpoint '%s' because it was missing the parameter '%s'",
+        "ServiceConnections_Error_FailedToParseServiceEndpoint_BadScheme": "Failed to parse the service endpoint '%s' because the auth scheme '%s' was invalid"
+        
+    }
+}

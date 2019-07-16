@@ -1,0 +1,43 @@
+{
+    "id": "e40e270b-59fc-4004-bac8-a4c25e8908d7",
+    "name": "NuGetExeAuthenticate",
+    "friendlyName": "NuGet.exe authenticate",
+    "description": "Configures nuget.exe to authenticate with Azure Artifacts and other NuGet repositories. Requires NuGet 4.8.5385 or higher. For dotnet (.NET Core), use DotNetAuthenticate instead of this task.",
+    "author": "Microsoft Corporation",
+    "helpUrl": "https://aka.ms/NuGetExeAuthenticateTask",
+    "helpMarkDown": "[Learn more about this task](https://aka.ms/NuGetExeAuthenticateTask)",
+    "category": "Package",
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "version": {
+        "Major": 0,
+        "Minor": 156,
+        "Patch": 0
+    },
+    "minimumAgentVersion": "2.105.7",
+    "instanceNameFormat": "Set up NuGet.exe authentication",
+    "inputs": [
+        {
+            "name": "nuGetServiceConnections",
+            "type": "connectedService:ExternalNuGetFeed",
+            "label": "Service connection credentials for feeds outside this organization",
+            "required": false,
+            "helpMarkDown": "Service connection credentials for feeds outside this organization/collection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.",
+            "properties": {
+                "EditableOptions": "False",
+                "MultiSelectFlatList": "True"
+            }
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "main.js"
+        }
+    },
+    "messages": {
+        "ConfiguringNuGetExeForCredProvider": "Configuring nuget.exe to use the credential provider. For more information, see https://aka.ms/NuGetExeAuthenticateTask",
+        "Error_NuGetExeAuthenticateOnlyForWindows": "The NuGetExeAuthenticate task can only be used on Windows. For dotnet (.NET Core), use the DotNetAuthenticate task."
+    }
+}

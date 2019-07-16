@@ -1,0 +1,43 @@
+{
+  "id": "45a08dd4-ec1c-432a-b13f-2038abb33036",
+  "name": "MSBuildAuthenticate",
+  "friendlyName": "ms-resource:loc.friendlyName",
+  "description": "ms-resource:loc.description",
+  "author": "Microsoft Corporation",
+  "helpUrl": "https://aka.ms/MSBuildAuthenticateTask",
+  "helpMarkDown": "ms-resource:loc.helpMarkDown",
+  "category": "Package",
+  "runsOn": [
+    "Agent",
+    "DeploymentGroup"
+  ],
+  "version": {
+    "Major": 0,
+    "Minor": 156,
+    "Patch": 0
+  },
+  "minimumAgentVersion": "2.105.7",
+  "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
+  "inputs": [
+    {
+      "name": "nuGetServiceConnections",
+      "type": "connectedService:ExternalNuGetFeed",
+      "label": "ms-resource:loc.input.label.nuGetServiceConnections",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.nuGetServiceConnections",
+      "properties": {
+        "EditableOptions": "False",
+        "MultiSelectFlatList": "True"
+      }
+    }
+  ],
+  "execution": {
+    "Node": {
+      "target": "main.js"
+    }
+  },
+  "messages": {
+    "ConfiguringMSBuildForCredProvider": "ms-resource:loc.messages.ConfiguringMSBuildForCredProvider",
+    "Error_MSBuildAuthenticateOnlyForWindows": "ms-resource:loc.messages.Error_MSBuildAuthenticateOnlyForWindows"
+  }
+}

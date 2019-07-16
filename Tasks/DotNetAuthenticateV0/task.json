@@ -1,0 +1,42 @@
+{
+    "id": "5c6567d9-0712-43eb-965d-ba296b3625c2",
+    "name": "DotNetAuthenticate",
+    "friendlyName": "dotnet authenticate",
+    "description": "Configures NuGet package management in dotnet to authenticate with Azure Artifacts and other repositories. Requires .NET Core SDK 2.1.400 or higher.",
+    "author": "Microsoft Corporation",
+    "helpUrl": "https://aka.ms/DotnetAuthenticateTask",
+    "helpMarkDown": "[Learn more about this task](https://aka.ms/DotnetAuthenticateTask)",
+    "category": "Package",
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "version": {
+        "Major": 0,
+        "Minor": 156,
+        "Patch": 0
+    },
+    "minimumAgentVersion": "2.105.7",
+    "instanceNameFormat": "Set up dotnet authentication",
+    "inputs": [
+        {
+            "name": "nuGetServiceConnections",
+            "type": "connectedService:ExternalNuGetFeed",
+            "label": "Service connection credentials for feeds outside this organization",
+            "required": false,
+            "helpMarkDown": "Service connection credentials for feeds outside this organization/collection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.",
+            "properties": {
+                "EditableOptions": "False",
+                "MultiSelectFlatList": "True"
+            }
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "main.js"
+        }
+    },
+    "messages": {
+        "ConfiguringDotnetForCredProvider": "Configuring dotnet to use the credential provider. For more information, see https://aka.ms/DotnetAuthenticateTask"
+    }
+}

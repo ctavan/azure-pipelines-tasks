@@ -1,0 +1,43 @@
+{
+  "id": "e40e270b-59fc-4004-bac8-a4c25e8908d7",
+  "name": "NuGetExeAuthenticate",
+  "friendlyName": "ms-resource:loc.friendlyName",
+  "description": "ms-resource:loc.description",
+  "author": "Microsoft Corporation",
+  "helpUrl": "https://aka.ms/NuGetExeAuthenticateTask",
+  "helpMarkDown": "ms-resource:loc.helpMarkDown",
+  "category": "Package",
+  "runsOn": [
+    "Agent",
+    "DeploymentGroup"
+  ],
+  "version": {
+    "Major": 0,
+    "Minor": 156,
+    "Patch": 0
+  },
+  "minimumAgentVersion": "2.105.7",
+  "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
+  "inputs": [
+    {
+      "name": "nuGetServiceConnections",
+      "type": "connectedService:ExternalNuGetFeed",
+      "label": "ms-resource:loc.input.label.nuGetServiceConnections",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.nuGetServiceConnections",
+      "properties": {
+        "EditableOptions": "False",
+        "MultiSelectFlatList": "True"
+      }
+    }
+  ],
+  "execution": {
+    "Node": {
+      "target": "main.js"
+    }
+  },
+  "messages": {
+    "ConfiguringNuGetExeForCredProvider": "ms-resource:loc.messages.ConfiguringNuGetExeForCredProvider",
+    "Error_NuGetExeAuthenticateOnlyForWindows": "ms-resource:loc.messages.Error_NuGetExeAuthenticateOnlyForWindows"
+  }
+}

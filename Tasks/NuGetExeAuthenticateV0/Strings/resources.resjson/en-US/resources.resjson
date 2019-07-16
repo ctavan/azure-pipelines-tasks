@@ -1,0 +1,10 @@
+{
+  "loc.friendlyName": "NuGet.exe authenticate",
+  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/NuGetExeAuthenticateTask)",
+  "loc.description": "Configures nuget.exe to authenticate with Azure Artifacts and other NuGet repositories. Requires NuGet 4.8.5385 or higher. For dotnet (.NET Core), use DotNetAuthenticate instead of this task.",
+  "loc.instanceNameFormat": "Set up NuGet.exe authentication",
+  "loc.input.label.nuGetServiceConnections": "Service connection credentials for feeds outside this organization",
+  "loc.input.help.nuGetServiceConnections": "Service connection credentials for feeds outside this organization/collection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.",
+  "loc.messages.ConfiguringNuGetExeForCredProvider": "Configuring nuget.exe to use the credential provider. For more information, see https://aka.ms/NuGetExeAuthenticateTask",
+  "loc.messages.Error_NuGetExeAuthenticateOnlyForWindows": "The NuGetExeAuthenticate task can only be used on Windows. For dotnet (.NET Core), use the DotNetAuthenticate task."
+}

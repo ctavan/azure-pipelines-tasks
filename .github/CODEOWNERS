@@ -83,6 +83,8 @@ Tasks/CmdLineV2/*   @bryanmacfarlane
 
 Tasks/CocoaPodsV0/*     @madhurig
 
+Tasks/Common/artifacts-common/*     @zjrunner @zarenner
+
 Tasks/Common/AzureRmDeploy-common/*   @vincentdass  @SumiranAgg
 
 Tasks/Common/Deployment/*   @bishal-pdMSFT  @chshrikh
@@ -152,6 +154,8 @@ Tasks/DockerV1/*    @bansalaseem
 Tasks/DockerV2/*    @bansalaseem
 
 Tasks/DockerComposeV0/*     @bansalaseem
+
+Tasks/DotNetAuthenticateV0/*      @zjrunner @zarenner
 
 Tasks/DotNetCoreCLIV2/*     @sachinma
 
@@ -233,6 +237,8 @@ Tasks/MavenV2/*     @madhurig
 
 Tasks/MavenV3/*     @madhurig
 
+Tasks/MSBuildAuthenticateV0/*      @zjrunner @zarenner
+
 Tasks/MSBuildV1/*   @daveken
 
 Tasks/MysqlDeploymentOnMachineGroupV1/*     @kmkumaran      @RoshanKumarMicrosoft
@@ -246,6 +252,8 @@ Tasks/NpmAuthenticateV0/*       @zjrunner
 Tasks/NuGetV0/*     @zjrunner
 
 Tasks/NuGetCommandV2/*      @zjrunner @jotaylo
+
+Tasks/NuGetExeAuthenticateV0/*      @zjrunner @zarenner
 
 Tasks/NuGetPackagerV0/*     @zjrunner
 
